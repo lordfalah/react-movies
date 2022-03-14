@@ -24,7 +24,8 @@ const DetailsArticle = () => {
       z-10 flex"
     >
       <div
-        className="backdrop-blur-sm bg-slate-500/40 dark:bg-slate-800 w-11/12 p-3 
+        className="backdrop-blur-sm bg-slate-500/40 dark:backdrop-blur-sm
+         dark:bg-slate-700/60 w-11/12 p-3 dark:brightness-105
       sm:p-4 m-auto rounded-lg relative lg:py-10"
       >
         <svg
@@ -47,7 +48,10 @@ const DetailsArticle = () => {
           />
         </svg>
 
-        <div className="aspect-video lg:aspect-[7/3] block sm:grid sm:gap-4 sm:grid-cols-2 ">
+        <div
+          className="aspect-video lg:aspect-[7/3] block sm:grid 
+        sm:gap-5 sm:grid-cols-2 md:p-2 md:pr-0 md:gap-10 lg:gap-8 lg:pr-8"
+        >
           <div
             style={{
               backgroundImage: `url("${
@@ -56,47 +60,75 @@ const DetailsArticle = () => {
                   : "https://source.unsplash.com/1000x600?notFound"
               }")`,
             }}
-            className="w-full h-full bg-no-repeat bg-cover lg:bg-contain
-             bg-center rounded-md"
+            className="w-full h-full bg-no-repeat bg-cover lg:bg-cover
+             bg-center rounded-md shadow-lg shadow-black/25 lg:max-w-lg m-auto"
           ></div>
 
           <div className="text-white">
-            <h2 className="text-3xl my-5 text-center font-semibold">
+            <h2
+              className="text-3xl my-5 text-center font-semibold sm:font-medium 
+            md:font-bold lg:text-4xl lg:font-extrabold"
+            >
               Information Details
             </h2>
 
             <table
-              className="border-collapse border-2 border-slate-600 w-full
-              text-xl font-normal"
+              className="border-collapse border-2 border-slate-400 
+              dark:border-slate-600 w-full"
             >
-              <thead>
+              <thead className="text-2xl sm:text-xl lg:text-2xl">
                 <tr>
-                  <th className="border p-2 border-slate-600 ...">Category</th>
-                  <th className="border p-2 border-slate-600 ...">Film</th>
+                  <th
+                    className="border p-2 border-slate-400 dark:border-slate-600
+                  font-medium sm:font-semibold xl:font-bold"
+                  >
+                    Category
+                  </th>
+                  <th
+                    className="border p-2 border-slate-400 dark:border-slate-600
+                  font-medium sm:font-semibold xl:font-bold"
+                  >
+                    Film
+                  </th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className="text-xl lg:text-2xl">
                 <tr>
-                  <td className="border p-1 font-semibold border-slate-700 ...">
+                  <td
+                    className="border p-1 font-medium 
+                  border-slate-400 dark:border-slate-700"
+                  >
                     Title
                   </td>
-                  <td className="border p-1 border-slate-700 ...">
+                  <td
+                    className="border p-1 border-slate-400 
+                  dark:border-slate-700"
+                  >
                     {unixData.Title}
                   </td>
                 </tr>
                 <tr>
-                  <td className="border p-1 font-semibold border-slate-700 ...">
+                  <td
+                    className="border p-1 font-medium border-slate-400 
+                  dark:border-slate-700"
+                  >
                     Type
                   </td>
-                  <td className="border p-1 border-slate-700 ...">
+                  <td
+                    className="border p-1 border-slate-400 
+                  dark:border-slate-700"
+                  >
                     {unixData.Type}
                   </td>
                 </tr>
                 <tr>
-                  <td className="border p-1 font-semibold border-slate-700 ...">
+                  <td
+                    className="border p-1 font-medium 
+                  border-slate-400 dark:border-slate-700"
+                  >
                     Years
                   </td>
-                  <td className="border p-1 border-slate-700 ...">
+                  <td className="border p-1 border-slate-700">
                     {unixData.Year}
                   </td>
                 </tr>

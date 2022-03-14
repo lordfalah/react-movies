@@ -5,7 +5,7 @@ import ShowMovie from "./ShowMovie";
 const CardMovie = () => {
   return (
     <div>
-      <div className="load">
+      <div className="load mt-5">
         <Loading />
       </div>
 

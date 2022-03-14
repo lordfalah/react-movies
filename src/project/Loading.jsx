@@ -10,7 +10,7 @@ const Loading = () => {
       {load ? (
         <span
           className="animate-ping font-semibold 
-        text-3xl"
+        text-2xl md:text-3xl"
         >
           Loading...
         </span>
