@@ -1,15 +1,18 @@
-# Getting Started with Create React App
+# Landing Page
+## _Web Movie_
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Landing page movie yang merupakan web untuk mencari informasi tentang movie/film yang menggunakan api dari apidb
 
-In the project directory, you can run:
 
-### `npm start`
+## Tech
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Teknologi yang digunakan:
 
-## The link access
-https://react-movies-1581.netlify.app/
+- React js 
+- Tailwind
+- Recoil
+
+
+## Link Access
+https://622f84374d46e03a91bf2815--react-movies-1581.netlify.app/
